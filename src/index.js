@@ -6,18 +6,20 @@ import { CLI_INFO, MESSAGES } from "./utils/constants";
 const program = new Command();
 
 // 텍스트 배너
-console.log(
-  chalk.blue(
-    figlet.textSync(CLI_INFO.name.toLowerCase(), {
-      font: "Dancing Font", // Ghost , Standard , Graffiti , Dancing Font , Slant , Pagga
-      horizontalLayout: "default",
-      verticalLayout: "default",
-      width: 80,
-      whitespaceBreak: true,
-    }),
-  ),
-);
-console.log(chalk.blue(MESSAGES.welcome));
+if (process.argv.length <= 2) {
+  console.log(
+    chalk.blue(
+      figlet.textSync(CLI_INFO.name.toLowerCase(), {
+        font: "Dancing Font", // Ghost , Standard , Graffiti , Dancing Font , Slant , Pagga
+        horizontalLayout: "default",
+        verticalLayout: "default",
+        width: 80,
+        whitespaceBreak: true,
+      }),
+    ),
+  );
+  console.log(chalk.blue(MESSAGES.welcome));
+}
 
 // CLI 정보
 program
