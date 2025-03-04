@@ -1,7 +1,7 @@
 {
   "name": "seongsuk",
   "version": "1.0.0",
-  "description": "seongsuk CLI",
+  "description": "🔥 This CLI allows you to explore Seongsuk's development activities.",
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "figlet": "^1.8.0",
-    "chalk": "^4.1.2"
+    "chalk": "^4.1.2",
+    "commander": "^13.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.26.4",

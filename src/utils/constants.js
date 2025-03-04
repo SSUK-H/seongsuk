@@ -21,4 +21,5 @@ export const MESSAGES = {
 
 ========================================================
 `,
+  error_unknown_command: "error: unknown command",
 };
