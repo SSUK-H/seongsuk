@@ -14,7 +14,8 @@
   "dependencies": {
     "figlet": "^1.8.0",
     "chalk": "^4.1.2",
-    "commander": "^13.1.0"
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.26.4",

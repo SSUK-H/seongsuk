@@ -2,6 +2,8 @@ import figlet from "figlet";
 import chalk from "chalk";
 import { Command } from "commander";
 import { CLI_INFO, MESSAGES } from "./utils/constants";
+import { githubCommand } from "./commands/github";
+import { portfolioCommand } from "./commands/portfolio";
 
 const program = new Command();
 
@@ -29,6 +31,10 @@ program
   .action(() => {
     program.help();
   });
+
+// command
+program.addCommand(githubCommand); // 깃헙
+program.addCommand(portfolioCommand); // 포트폴리오
 
 // 정의되지 않은 명령어인 경우 자동으로 help 실행
 program.on("command:*", (operands) => {
