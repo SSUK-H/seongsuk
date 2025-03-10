@@ -2,7 +2,10 @@
   "name": "seongsuk",
   "version": "1.0.0",
   "description": "🔥 This CLI allows you to explore Seongsuk's development activities.",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "bin": {
+    "seongsuk": "./bin/seongsuk.js"
+  },
   "scripts": {
     "start": "node dist/index.js",
     "build": "babel src -d dist",
@@ -26,6 +29,13 @@
     "eslint-plugin-prettier": "^5.2.3",
     "prettier": "^3.5.2"
   },
+  "files": [
+    "dist/",
+    "bin/",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "seongsuk",
     "cli",
