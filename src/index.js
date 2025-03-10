@@ -1,9 +1,8 @@
 import figlet from "figlet";
 import chalk from "chalk";
 import { Command } from "commander";
-import { CLI_INFO, MESSAGES } from "./utils/constants";
-import { githubCommand } from "./commands/github";
-import { portfolioCommand } from "./commands/portfolio";
+import { CLI_INFO, MESSAGES } from "./constants";
+import { githubCommand, portfolioCommand } from "./command";
 
 const program = new Command();
 
