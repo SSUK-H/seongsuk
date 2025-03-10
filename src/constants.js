@@ -1,5 +1,5 @@
-import pkg from "../../package.json";
-import { ENV } from "../config/env";
+import pkg from "../package.json";
+import { ENV } from "./env";
 
 // CLI 정보
 export const CLI_INFO = {
