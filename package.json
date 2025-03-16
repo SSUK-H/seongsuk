@@ -1,6 +1,6 @@
 {
   "name": "seongsuk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🔥 This CLI allows you to explore Seongsuk's development activities.",
   "main": "./dist/index.js",
   "bin": {
